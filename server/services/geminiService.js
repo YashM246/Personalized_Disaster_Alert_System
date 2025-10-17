@@ -17,9 +17,9 @@ async function generatePersonalizedAlert(prompt) {
   try {
     console.log('Calling Gemini API...');
 
-    // Use Gemini 1.5 Flash (free tier)
+    // Use Gemini Pro (free tier)
     const model = genAI.getGenerativeModel({
-      model: 'gemini-1.5-flash',
+      model: 'gemini-pro',
       generationConfig: {
         temperature: 0.7,
         maxOutputTokens: 2048,
