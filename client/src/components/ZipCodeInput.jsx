@@ -63,11 +63,11 @@ function ZipCodeInput({ onSubmit, loading }) {
               <div className="relative text-7xl animate-bounce">🚨</div>
             </div>
             <h1 className="text-5xl md:text-6xl font-extrabold bg-gradient-to-r from-red-600 via-orange-600 to-yellow-600 bg-clip-text text-transparent mb-4 leading-tight">
-              Disaster Alert System
+              PANDAS
             </h1>
             <div className="h-1 w-32 bg-gradient-to-r from-red-500 to-yellow-500 mx-auto rounded-full mb-6"></div>
             <p className="text-xl text-gray-700 font-semibold">
-              AI-Powered Personalized Emergency Alerts
+              Personalized AI Natural Disaster Alert System
             </p>
             <p className="text-sm text-gray-600 mt-3 max-w-md mx-auto">
               Enter your ZIP code to generate a culturally-appropriate disaster alert tailored to your community
