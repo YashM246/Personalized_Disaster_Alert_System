@@ -60,7 +60,7 @@ app.listen(PORT, () => {
   console.log(`📡 API endpoints:`);
   console.log(`   - GET  http://localhost:${PORT}/api/health`);
   console.log(`   - POST http://localhost:${PORT}/api/generate-alert`);
-  console.log(`\n⚠️  Make sure ANTHROPIC_API_KEY is set in .env file\n`);
+  console.log(`\n⚠️  Make sure GEMINI_API_KEY is set in .env file\n`);
 });
 
 // Graceful shutdown

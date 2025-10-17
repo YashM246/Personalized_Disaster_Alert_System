@@ -1,13 +1,13 @@
 /**
  * LLM Prompt Constructor
- * Builds detailed prompts for Claude API to generate personalized disaster alerts
+ * Builds detailed prompts for Gemini API to generate personalized disaster alerts
  */
 
 /**
  * Constructs a comprehensive prompt for generating personalized emergency alerts
  * @param {Object} disaster - Disaster scenario data
  * @param {Object} userContext - User's ZIP code and demographic information
- * @returns {string} Complete prompt for Claude API
+ * @returns {string} Complete prompt for Gemini API
  */
 function buildAlertPrompt(disaster, userContext) {
   const { zipCode, ...demographics } = userContext;

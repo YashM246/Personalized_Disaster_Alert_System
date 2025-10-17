@@ -8,7 +8,7 @@ const router = express.Router();
 const zipDatabase = require('../data/zipDatabase');
 const { generateRandomDisaster } = require('../data/disasterGenerator');
 const { buildAlertPrompt } = require('../services/promptBuilder');
-const { generatePersonalizedAlert } = require('../services/claudeService');
+const { generatePersonalizedAlert } = require('../services/geminiService');
 
 /**
  * POST /api/generate-alert
@@ -50,10 +50,10 @@ router.post('/generate-alert', async (req, res) => {
       ...zipData
     };
 
-    // Build prompt for Claude
+    // Build prompt for Gemini
     const prompt = buildAlertPrompt(disaster, userContext);
 
-    // Generate personalized alert using Claude API
+    // Generate personalized alert using Gemini API
     const alert = await generatePersonalizedAlert(prompt);
 
     // Combine all data for response
