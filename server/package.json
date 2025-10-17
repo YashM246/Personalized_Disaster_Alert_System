@@ -4,7 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --verbose",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "test:unit": "jest tests/ --testPathIgnorePatterns=integration.test.js --testPathIgnorePatterns=api.test.js",
+    "test:integration": "jest tests/integration.test.js",
+    "test:api": "jest tests/api.test.js"
   },
   "keywords": [],
   "author": "",
@@ -15,5 +20,9 @@
     "cors": "^2.8.5",
     "dotenv": "^17.2.3",
     "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "jest": "^30.2.0",
+    "supertest": "^7.1.4"
   }
 }
