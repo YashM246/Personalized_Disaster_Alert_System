@@ -55,7 +55,7 @@ async function generatePersonalizedAlert(prompt) {
 function getFallbackResponse() {
   return {
     primaryLanguage: "English",
-    secondaryLanguages: ["Spanish"],
+    secondaryLanguages: ["Persian"],
     readingLevel: "medium",
     urgencyLevel: 4,
     headline: "⚠️ Emergency Alert - Take Action Now",
@@ -73,9 +73,9 @@ function getFallbackResponse() {
       "Individuals with medical needs should secure medication and medical equipment"
     ],
     translations: {
-      "Spanish": {
-        "headline": "⚠️ Alerta de Emergencia - Actúe Ahora",
-        "body": "Un desastre natural está afectando su área. Siga la guía oficial de las autoridades locales. Evacúe si se le ordena. Manténgase informado a través de transmisiones de emergencia. Asegúrese de tener suministros de emergencia listos incluyendo agua, comida y medicamentos."
+      "Persian": {
+        "headline": "⚠️ هشدار اضطراری - اکنون اقدام کنید",
+        "body": "یک بلای طبیعی در منطقه شما تأثیر می‌گذارد. دستورالعمل‌های رسمی مقامات محلی را دنبال کنید. در صورت دستور، تخلیه کنید. از طریق پخش‌های اضطراری مطلع باشید. اطمینان حاصل کنید که لوازم اضطراری شامل آب، غذا و دارو آماده دارید."
       }
     }
   };

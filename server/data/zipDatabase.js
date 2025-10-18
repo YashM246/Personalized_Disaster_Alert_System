@@ -50,28 +50,28 @@ const zipDatabase = {
     historicalRisks: ["earthquake", "flood", "wildfire"]
   },
 
-  // San Francisco (Tenderloin), California - Urban, diverse, low-income
-  "94102": {
-    neighborhood: "San Francisco, CA",
+  // Westwood/West Los Angeles, California - Persian neighborhood
+  "90024": {
+    neighborhood: "Westwood, Los Angeles, CA",
     languages: {
-      English: 48.3,
-      Chinese: 21.6,
-      Spanish: 14.2,
-      Vietnamese: 8.4,
-      Tagalog: 4.1,
-      Other: 3.4
+      Persian: 35.2,
+      English: 32.4,
+      Arabic: 18.6,
+      Hebrew: 8.3,
+      Armenian: 3.1,
+      Other: 2.4
     },
-    medianAge: 39,
-    medianIncome: 41234,
-    educationLevel: "medium",
-    geography: "Dense urban downtown, hilly terrain, coastal proximity",
-    coordinates: { lat: 37.7799, lng: -122.4148 },
+    medianAge: 41,
+    medianIncome: 68450,
+    educationLevel: "high",
+    geography: "Urban residential area, Los Angeles basin, moderate elevation",
+    coordinates: { lat: 34.0689, lng: -118.4452 },
     vulnerablePopulations: {
-      elderly: 14.7,
-      children: 8.9,
-      disabled: 15.8
+      elderly: 16.3,
+      children: 17.8,
+      disabled: 9.2
     },
-    historicalRisks: ["earthquake", "tsunami", "flood"]
+    historicalRisks: ["earthquake", "wildfire", "flood"]
   },
 
   // Miami Beach, Florida - Coastal, tourist area, sea level risk

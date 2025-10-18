@@ -56,6 +56,31 @@ router.post('/generate-alert', async (req, res) => {
     // Generate personalized alert using Gemini API
     const alert = await generatePersonalizedAlert(prompt);
 
+    // Hardcode languages for specific ZIP codes to ensure correct translations
+    if (zipCode === '90024') {
+      // Westwood Persian neighborhood - show Persian ONLY
+      alert.secondaryLanguages = ['Persian'];
+      // Keep only Persian translation, remove all others
+      const persianTranslation = alert.translations?.Persian || {
+        headline: alert.headline,
+        body: alert.body
+      };
+      alert.translations = {
+        Persian: persianTranslation
+      };
+    } else if (zipCode === '90022') {
+      // East Los Angeles - show Spanish ONLY
+      alert.secondaryLanguages = ['Spanish'];
+      // Keep only Spanish translation, remove all others (including Persian)
+      const spanishTranslation = alert.translations?.Spanish || {
+        headline: alert.headline,
+        body: alert.body
+      };
+      alert.translations = {
+        Spanish: spanishTranslation
+      };
+    }
+
     // Combine all data for response
     const response = {
       disaster: {

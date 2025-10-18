@@ -12,7 +12,7 @@ function ZipCodeInput({ onSubmit, loading }) {
   const sampleZips = [
     { zip: '90210', label: 'Beverly Hills, CA' },
     { zip: '90022', label: 'East LA, CA' },
-    { zip: '94102', label: 'San Francisco, CA' },
+    { zip: '90024', label: 'Westwood, LA, CA' },
     { zip: '33139', label: 'Miami Beach, FL' },
     { zip: '90802', label: 'Long Beach, CA' },
     { zip: '97201', label: 'Portland, OR' },
